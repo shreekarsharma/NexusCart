@@ -1,5 +1,5 @@
 const cardsDiv = document.querySelector(".cards");
-async function getProducts() {
+(async function getProducts() {
   const response = await fetch("https://fakestoreapi.in/api/products");
   try {
     if (response.ok) {
@@ -69,5 +69,4 @@ async function getProducts() {
   } catch (error) {
     console.log(error);
   }
-}
-getProducts();
+})();
